@@ -1,8 +1,10 @@
+var path = require('path');
+
 module.exports = {
 	entry: './src/index.js',
 	output: {
-		path: '/Users/kinga/Desktop/JavaScriptDev/Module4/Zadanie4/build',
-		filename: 'index.bundle.js'
+		path: path.join(__dirname, "build"),
+		filename: 'app.bundle.js'
 	},
 	module: {
 		rules: [
